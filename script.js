@@ -28,6 +28,7 @@ addTodo.addEventListener('click', (e) => {
     todoItem.appendChild(para);
     const deleteBtn = document.createElement('button');
     deleteBtn.innerText = 'x';
+    deleteBtn.className = 'delBtn'
     todoItem.appendChild(deleteBtn);
     todoList.appendChild(todoItem)
     todoInput.value = '';
@@ -37,4 +38,5 @@ addTodo.addEventListener('click', (e) => {
 
     })
 })
+
 
